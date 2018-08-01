@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+
+  shyft-club-stage:
+    container_name: shyft-club-stage
+    build:
+      context: .
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - '3000:80'
+    environment:
+      - NODE_ENV=development

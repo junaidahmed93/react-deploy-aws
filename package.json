@@ -1,5 +1,5 @@
 {
-  "name": "test-deploy",
+  "name": "ShyftClub",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,7 +44,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js --ext .jsx --no-cache --quiet",
+    "lintfix": "eslint src --ext .js --ext .jsx --no-cache --fix"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
